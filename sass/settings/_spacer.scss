@@ -19,8 +19,8 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 6,
-  7: $spacer * 12,
-  8: $spacer * 13
+  7: $spacer * 9,
+  8: $spacer * 12,
 ) !default;
 
 $negative-spacers: (
@@ -32,4 +32,5 @@ $negative-spacers: (
   5: $spacer * -3,
   6: $spacer * -6,
   7: $spacer * -9,
+  8: $spacer * -12,
 ) !default;
