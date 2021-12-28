@@ -34,7 +34,7 @@ $font-color: map.get(global.$palette, "gray", "blue", color) !default;
  * Ombre d'une carte par défaut.
  * @type List
  */
-$shadow: 0 0 2rem rgba(0, 0, 0, .25);
+$shadow: 0 0 2rem rgba(0, 0, 0, .2);
 
 /*
  * La carte hérite de la marge globale
