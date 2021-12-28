@@ -6714,7 +6714,7 @@ a img {
   width: 1.8rem;
   text-align: center;
   position: relative;
-  outline: solid #ebfbff;
+  outline: solid 0.1rem #ebfbff;
   transition: outline 0.25s ease-out;
 }
 
@@ -6734,7 +6734,7 @@ a img {
 
 .link-icon--neutral-light:hover,
 .link-icon--neutral-light:focus {
-  outline: solid #ff52bf;
+  outline: solid 0.1rem #ff52bf;
 }
 
 .link-icon--neutral-light:hover > svg,
