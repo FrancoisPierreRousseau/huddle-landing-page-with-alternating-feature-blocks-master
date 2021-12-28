@@ -1,0 +1,9 @@
+@use "sass:map";
+
+@use "../settings/global";
+
+.footer{
+  background: map.get(global.$palette, "neutral", "dark", color);
+  color: map.get(global.$palette, "neutral", "light", color);
+  padding: 1rem;
+}

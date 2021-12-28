@@ -1,0 +1,168 @@
+@use "sass:map";
+@use "sass:list";
+
+@use "../util/breakpoint";
+@use "../settings/breakpoint-p";
+@use "../settings/spacer";
+
+/*-------------------------------------------------------------------*\
+  #PROTOTYPE-SPACER
+  Crée des classes utilitaires appropriées concernant les espacement
+  ( source intéressante aller dans le code source de bootstrap dans
+  le dossier utilities, les fichiers utilities et bootstrap grid )
+\*--------------------------------------------------------------------*/
+
+/*
+ * Schema CSS de l'ensemble des propriétés des margin ( qui me sont pour l'instant nécessaire) :
+ *   - Property: Nom de la property. Cela serra également le nom de la class par défaut
+ *   - Class (optionnel): Customisation de la class. Si c'est appliqué, cela serra `class-property`
+ *                        (ex: display-flex)
+ *   - Space-position: Quelles sont les différents espacement impacté ( ici margin-top, margin-bottom ou les deux ect.).
+ *           margin: 1-Haut 2-droite 3-bas 4-gauche,
+ *           padding: 1-Haut 2-droit 3-Bas 4-Gauche
+ *   - Values: Valeur que la property prendra ( une valeur = une classe utilitaire) :
+ *             Chaque clés au sein de ces valeurs feront partie intégrante de la classe
+ * @type Map
+ */
+$schema-spacer: (
+        "margin": (
+                property: margin,
+                class: "margin",
+                values: spacer.$spacers
+        ),
+        "margin-x": (
+                property: margin-right margin-left,
+                class: "margin-x",
+                values: spacer.$spacers
+        ),
+        "margin-y": (
+                property: margin-top margin-right,
+                class: "margin-y",
+                values: spacer.$spacers
+        ),
+        "margin-top": (
+                property: margin-top,
+                class: "margin-top",
+                values: spacer.$spacers
+        ),
+        "margin-end": (
+                property: margin-right,
+                class: "margin-end",
+                values: spacer.$spacers
+        ),
+        "margin-bottom": (
+                property: margin-bottom,
+                class: "margin-bottom",
+                values: spacer.$spacers
+        ),
+        "margin-start": (
+                property: margin-left,
+                class: "margin-start",
+                values: spacer.$spacers
+        ),
+        "padding": (
+                property: padding,
+                class: "padding",
+                values: spacer.$spacers
+        ),
+        "padding-x": (
+                property: padding-right padding-left,
+                class: "padding-x",
+                values: spacer.$spacers
+        ),
+        "padding-y": (
+                property: padding-top padding-bottom,
+                class: "padding-y",
+                values: spacer.$spacers
+        ),
+        "padding-top": (
+                property: padding-top,
+                class: "padding-top",
+                values: spacer.$spacers
+        ),
+        "padding-end": (
+                property: padding-right,
+                class: "padding-end",
+                values: spacer.$spacers
+        ),
+        "padding-bottom": (
+                property: padding-bottom,
+                class: "padding-bottom",
+                values: spacer.$spacers
+        ),
+        "padding-start": (
+                property: padding-left,
+                class: "padding-start",
+                values: spacer.$spacers
+        ),
+        "margin-top-negative": (
+                property: margin-top,
+                class: "margin-top-negative",
+                values: spacer.$negative-spacers
+        ),
+        "margin-start-auto": (
+                property: margin-right,
+                class: "margin-start-auto",
+                values: auto,
+        ),
+        "margin-end-auto": (
+                property: margin-left,
+                class: "margin-end-auto",
+                values: auto,
+        ),
+        "margin-bottom-negative": (
+                property: margin-bottom,
+                class: "margin-bottom",
+                values: spacer.$negative-spacers
+        ),
+        "top-negative": (
+                property: top,
+                class: "top-negative",
+                values: spacer.$negative-spacers
+        ),
+);
+
+// Génération des classes utilitaires
+@each $key, $utility in $schema-spacer {
+
+  // Récupération des valeurs pour les placer au sein des classes,
+  $values: map.get($utility, values);
+
+  // Récupération des différentes espacements impactés ( margin bottom ? margin left ?)
+  $space-position: map.get($utility, space-position);
+
+  // Récupération de la propriété associé à la classe utilitaire
+  $properties: map.get($utility, property);
+
+  // Utilisation de la classe
+  $property-class: map.get($utility, class);
+
+  @each $breakpoint in map.keys(breakpoint-p.$breakpoint) {
+    @if (length($values) > 1) {
+      @each $size, $value in $values {
+        // Si `$key` est pas null alors le class serra composé de la clé
+        $property-class-modifier: if($key != null, #{$key}, $property-class);
+
+        $infix: breakpoint.infix($breakpoint);
+
+        @include breakpoint.media-up($breakpoint) {
+          .#{$property-class-modifier}-#{$size}#{$infix} {
+            @each $property in $properties {
+              #{$property}: #{$value} !important;
+            }
+          }
+        }
+      }
+    } @else {
+      @include breakpoint.media-up($breakpoint) {
+        $property-class-modifier: if($key != null, #{$key}, $property-class);
+        $infix: breakpoint.infix($breakpoint);
+        .#{$property-class-modifier}#{$infix} {
+          @each $property in $properties {
+            #{$property}: #{$values} !important;
+          }
+        }
+      }
+    }
+  }
+}

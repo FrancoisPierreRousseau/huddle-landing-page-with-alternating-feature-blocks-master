@@ -1,0 +1,88 @@
+@use "sass:map";
+
+@use "../settings/typography";
+@use "../settings/global";
+
+/*-----------------------------------------------*\
+  #TYPOGRAPHY-BASE
+  Application des styles de base de la typographie
+  ainsi que des classe utilitaires concernant les
+  en tête
+\*------------------------------------------------*/
+
+// La typographie se réinitialise
+h1, h2, h3, h4, h5, h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+// Paragraphs
+p {
+  margin-bottom: typography.$paragraph-margin-bottom;
+  line-height: typography.$paragraph-lineheight;
+  text-rendering: typography.$paragraph-text-rendering;
+}
+
+// Headings
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: typography.$header-font-family;
+  font-style: typography.$header-font-style;
+  font-weight: typography.$header-font-weight;
+  text-rendering: typography.$header-text-rendering;
+}
+
+/*
+ * Application de la font size des en tête et la génération
+ * des classes utilitaires
+ */
+@each $header, $headers in typography.$header-styles {
+  @if map-has-key($headers, font-size) {
+    #{$header}, .#{$header} {
+      @include font-size(map-get($headers, font-size));
+    }
+  }
+}
+
+// List items
+li {
+  font-size: inherit;
+}
+
+ul{
+  margin-bottom: 1rem;
+  list-style-position: outside;
+  line-height: typography.$paragraph-lineheight;
+}
+
+ul {
+    margin-left: 1.25rem;
+    list-style-type: disc;
+  }
+
+
+// Links
+// Links
+a {
+  line-height: inherit;
+  color: typography.$anchor-color;
+  text-decoration: typography.$anchor-text-decoration;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out, text-decoration 0.25s ease-out;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: typography.$anchor-color-hover;
+    text-decoration: typography.$anchor-text-decoration-hover;
+  }
+
+  img {
+    border: 0;
+  }
+}

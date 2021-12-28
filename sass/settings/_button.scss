@@ -1,0 +1,95 @@
+@use "sass:map";
+
+@use "global";
+
+/*------------------------------------*\
+  #SETTINGS-BUTTON-BLOCK
+\*------------------------------------*/
+
+/*
+ * Arrondis les bords des boutons
+ * @type Number
+ */
+$radius: 2.5rem !default;
+
+/*
+ * Famille de polices pour les éléments de bouton.
+ * @type Font
+ */
+$font-family: inherit !default;
+
+/*
+ * Rembourrage à l'intérieur des boutons.
+ * type List
+ */
+$padding-small: .5em 2.2em !default;
+
+/*
+ * Rembourrage à l'intérieur des boutons.
+ * type List
+ */
+$padding: 1em 2.9em !default;
+
+/*
+ * Marge autour des boutons.
+ * type Number
+ */
+$margin: 0 0 global.$margin 0 !default;
+
+
+/*
+ * Remplissage par défaut des boutons. Peut être soit `solid` soit `hollow`.
+ * @type Keyword
+ */
+$fill: solid !default;
+
+/*
+ * Couleur de fond par défaut des boutons.
+ * @type Color
+ */
+$primary-background: map.get(global.$palette, "primary", "light", color) !default;
+$background: map.get(global.$palette, "gray", "blue", color);
+
+/*
+ * Couleur de fond au survol pour les boutons.
+ * @type Color
+ */
+$background-hover: hsl(245, 83%, 68%) !default;
+
+/*
+ * Couleur de la police pour les boutons.
+ * @type List
+ */
+$color: map.get(global.$palette, light, primary, color) !default;
+
+/*
+ * Border for buttons, transparent by default
+ * @type List
+ */
+$border: 1px solid transparent !default;
+
+/*
+ * Transitions pour les boutons.
+ * @type List
+ */
+$transition: background-color 0.25s ease-out, color 0.25s ease-out, opacity 0.25s ease-out !default;
+
+
+/*
+ * Taille des boutons.
+ * @type Number
+ */
+$size: 0.9rem !default;
+
+/*
+ * Poids des polices des boutons
+ * @type Number
+ */
+$font-weight: 400 !default;
+
+/*
+ * Ombre d'un bouton par défaut. Ici c'est avec la couleur primary
+ * Il serai judicieux de séparer les ombres au sein de classes utilitaires
+ * @type List
+ */
+$shadow : 0px 7px 13px hsla(0, 0%, 0%, .25);

@@ -1,0 +1,104 @@
+@use "global";
+@use "sass:map";
+
+/*------------------------------------*\
+  #SETTINGS-TYPOGRAPHY
+\*------------------------------------*/
+
+/*
+ * Famille de polices pour les éléments d'en-tête.
+ * @type String | List
+ */
+$header-font-family: 'Poppins', sans-serif !default;
+
+/*
+ * Poids de la police des en-têtes.
+ * @type String
+ */
+$header-font-weight: 600 !default;
+
+/*
+ * Hauteur de ligne des en-têtes.
+ * @type Number
+ */
+$header-lineheight: 1.4 !default;
+
+/*
+ * Marge inférieure des en-têtes
+ * @type Number
+ */
+$header-margin-bottom: 0.5rem !default;
+
+/*
+ * Styles d'en-têtes pour différentes tailles d'écran. Chaque valeur est une taille de police d'en-tête.
+ * @type Map
+ *
+ */
+$header-styles: (
+    'h1': ('font-size': 34px),
+    'h2': ('font-size': 31px),
+    'h3': ('font-size': 25px),
+) !default;
+
+/*
+ * Méthode de rendu du texte des en-têtes.
+ * @type String
+ */
+$header-text-rendering: optimizeLegibility !default;
+
+/*
+ * Style de police (par exemple, en italique) des en-têtes.
+ * @type String
+ */
+$header-font-style: normal !default;
+
+/*
+ * Hauteur de ligne du texte à l'intérieur des éléments `<p>`.
+ * @type Number
+ */
+$paragraph-lineheight: 1.6 !default;
+
+/*
+ * Marge inférieure des paragraphes.
+ * @type Number
+ */
+$paragraph-margin-bottom: 1rem !default;
+
+/*
+ * Méthode de rendu du texte pour le texte du paragraphe.
+ * @type String
+ */
+$paragraph-text-rendering: optimizeLegibility !default;
+
+/*
+ * Taille de police par défaut du corp de la page
+ * @type Number
+ */
+$body-fontsize : global.$font-size !default;
+
+$paragraph-color: map.get(global.$palette, "gray", "blue") !default;
+
+
+/*
+ *  Couleur par défaut pour les liens.
+ *  @type Color
+ */
+$anchor-color: map.get(global.$palette, "black", "dark", color) !default;
+
+/*
+ * Couleur par défaut des liens au survol.
+ * @type Color
+ */
+$anchor-color-hover: map.get(global.$palette, "black", "dark", hover) !default;
+
+/*
+ * Décoration de texte par défaut pour les liens.
+ * @type String
+ */
+$anchor-text-decoration: none !default;
+
+/*
+ * Décoration par défaut du texte des liens au survol.
+ * @type String
+ */
+$anchor-text-decoration-hover: underline !default;

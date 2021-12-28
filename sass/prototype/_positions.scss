@@ -1,0 +1,34 @@
+@use "sass:map";
+
+@use "../util/breakpoint";
+@use "../settings/breakpoint-p";
+@use "../settings/spacer";
+
+/*----------------------------------------*\
+  #PROTOTYPE-DISPLAY
+\*----------------------------------------*/
+
+/*
+ * Map contenant toute les classes utilitaires `display`
+ * @type Map
+ */
+$prototype-position: (
+        relative,
+        absolute
+) !default;
+
+/*
+ * Génère toutes les classes `display`
+ */
+@each $breakpoint in map.keys(breakpoint-p.$breakpoint) {
+
+  $infix: breakpoint.infix($breakpoint);
+
+  @include breakpoint.media-up($breakpoint) {
+    @each $position in $prototype-position {
+      .position-#{$position}#{$infix} {
+        position: $position !important;
+      }
+    }
+  }
+}

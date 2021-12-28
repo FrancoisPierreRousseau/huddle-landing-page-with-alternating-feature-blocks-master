@@ -1,0 +1,78 @@
+/*------------------------------------------------*\
+  #UTIL-NORMALIZE
+  Normalise l'ensemble des comportements au sein
+  d'un navigateur web
+\*-----------------------------------------------*/
+
+/*
+ * 1. Corriger la hauteur des lignes dans tous les navigateurs.
+ * 2. Empêcher l'ajustement de la taille de la police après un changement d'orientation dans iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Supprime la marge dans tous les navigateurs.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+ * 1. Modifie les styles de police dans tous les navigateurs
+ * 2. Supprime la marge dans Firefox et Safari.
+ */
+button {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * 1. Show the overflow in Edge.
+ */
+button { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Suppression de l'héritage de la transformation du texte dans Edge, Firefox et IE.
+*/
+button { /* 1 */
+  text-transform: none;
+}
+
+/*
+ * Correction de l'impossibilité de styliser les types cliquables dans iOS et Safari.
+ */
+button{
+  -webkit-appearance: button;
+}
+
+/*
+ * Supprime la bordure et le rembourrage intérieurs dans Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner{
+  border-style: none;
+  padding: 0;
+}
+
+/*
+ * Restaure les styles de mise au point non définis par la règle précédente.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,{
+  outline: 1px dotted ButtonText;
+}

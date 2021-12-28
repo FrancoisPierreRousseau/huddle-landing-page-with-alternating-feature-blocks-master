@@ -1,0 +1,47 @@
+@use "sass:map";
+@use "global";
+
+/*-----------------------------------------------------------------*\
+  #SETTINGS-CARD
+  Permet de paramétré les propriétés appliqué au sein des cartes
+\*-----------------------------------------------------------------*/
+
+/*
+ * Arrondis les bords des cards
+ * @type Number
+ */
+$radius: global.$radius !default;
+
+/*
+ * Couleur de fond par défaut des cards.
+ * @type Color
+ */
+$background: white !default;
+
+/*
+ * Valeur globale utilisée concernant le rembourrage des cards
+ * @type Number
+ */
+$padding: global.$padding !default;
+
+/*
+ * Couleur de police par défaut pour les cards.
+ * @type Color
+ */
+$font-color: map.get(global.$palette, "gray", "blue", color) !default;
+
+/*
+ * Ombre d'une carte par défaut.
+ * @type List
+ */
+$shadow: 0 0 2rem rgba(0, 0, 0, .25);
+
+/*
+ * La carte hérite de la marge globale
+ * @type Number
+ */
+$margin: global.$margin;
+
+
+
+

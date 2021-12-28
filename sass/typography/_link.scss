@@ -1,0 +1,39 @@
+@use "sass:map";
+
+@use "../settings/global";
+
+.link-icon {
+  display: block;
+  height: 1.8rem;
+  width: 1.8rem;
+  text-align: center;
+  position: relative;
+  outline: solid hsl(193, 100%, 96%);
+  transition: outline 0.25s ease-out
+}
+
+.link-icon > svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+  height: 1rem;
+  transition: fill 0.25s ease-out;
+}
+
+.link-icon--neutral-light > svg{
+  fill: hsl(193, 100%, 96%);
+}
+
+.link-icon--neutral-light:hover,
+.link-icon--neutral-light:focus{
+  outline: solid map.get(global.$palette, "primary", "light", color);
+}
+
+.link-icon--neutral-light:hover  > svg,
+.link-icon--neutral-light:focus >  svg{
+  fill: map.get(global.$palette, "primary", "light", color);
+}
+
+

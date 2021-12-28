@@ -1,0 +1,190 @@
+@use "../settings/card";
+
+/*-------------------------------------------------*\
+  #COMPONENTS-CARD-BLOCK
+  ---------------------------------------------------
+  Application de la structure global des cards
+\*---------------------------------------------------*/
+
+/*
+ * Structure principale des cards par défaut
+ */
+.card {
+  background: card.$background;
+  border-radius: card.$radius;
+  padding: card.$padding;
+  box-shadow: card.$shadow;
+  margin: card.$margin;
+}
+
+@media (min-width: 950px) {
+  .card--very-big {
+    max-width: 58em;
+  }
+}
+
+@media (min-width: 1249px) {
+  .card--very-big {
+    max-width: 60em;
+  }
+}
+
+@media (min-width: 1443px) {
+  .card--very-big {
+    max-width: 64em;
+  }
+}
+
+.card--big {
+  max-width: 35em;
+}
+
+
+.card p {
+  color: card.$font-color;
+}
+
+.card__illustration {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media (min-width: 360px) {
+  .card__illustration {
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+  }
+}
+
+@media (min-width: 370px) {
+  .card__illustration {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
+
+@media (min-width: 380px) {
+  .card__illustration {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+@media (min-width: 390px) {
+  .card__illustration {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+  }
+}
+
+@media (min-width: 400px) {
+  .card__illustration {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
+
+@media (min-width: 420px) {
+  .card__illustration {
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+  }
+}
+
+@media (min-width: 420px) {
+  .card__illustration {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+
+@media (min-width: 440px) {
+  .card__illustration {
+    padding-left: 5.5em;
+    padding-right: 5.5em;
+  }
+}
+
+@media (min-width: 460px) {
+  .card__illustration {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+}
+
+@media (min-width: 480px) {
+  .card__illustration {
+    padding-left: 6.5em;
+    padding-right: 6.5em;
+  }
+}
+
+@media (min-width: 500px) {
+  .card__illustration {
+    padding-left: 7em;
+    padding-right: 7em;
+  }
+}
+
+@media (min-width: 520px) {
+  .card__illustration {
+    padding-left: 7.5em;
+    padding-right: 7.5em;
+  }
+}
+
+@media (min-width: 540px) {
+  .card__illustration {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+}
+
+@media (min-width: 560px) {
+  .card__illustration {
+    padding-left: 8.5em;
+    padding-right: 8.5em;
+  }
+}
+
+@media (min-width: 580px) {
+  .card__illustration {
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+}
+
+@media (min-width: 600px) {
+  .card__illustration {
+    padding-left: 9.5em;
+    padding-right: 9.5em;
+  }
+}
+
+@media (min-width: 620px) {
+  .card__illustration {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+}
+
+@media (min-width: 640px) {
+  .card__illustration {
+    padding-left: 10.5em;
+    padding-right: 10.5em;
+  }
+}
+
+@media (min-width: 650px) {
+  .card__illustration {
+    padding-left: 11em;
+    padding-right: 11em;
+  }
+}
+
+@media (min-width: 670px) {
+  .card__illustration {
+    padding-left: 11.5em;
+    padding-right: 11.5em;
+  }
+}
