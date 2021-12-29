@@ -12,6 +12,7 @@
   .header {
     padding-right: 2em;
     padding-left: 2em;
+    background: map.get(global.$palette, "neutral", "light", color )  url("../images/bg-hero-desktop.svg");
   }
 }
 

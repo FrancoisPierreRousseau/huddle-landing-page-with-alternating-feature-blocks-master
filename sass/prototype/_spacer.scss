@@ -120,6 +120,11 @@ $schema-spacer: (
                 class: "top-negative",
                 values: spacer.$negative-spacers
         ),
+        "bottom-negative": (
+                property: bottom,
+                class: "bottom-negative",
+                values: spacer.$negative-spacers
+        ),
 );
 
 // Génération des classes utilitaires

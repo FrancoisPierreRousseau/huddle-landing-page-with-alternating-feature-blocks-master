@@ -5,5 +5,4 @@
 .footer{
   background: map.get(global.$palette, "neutral", "dark", color);
   color: map.get(global.$palette, "neutral", "light", color);
-  padding: 1rem;
 }

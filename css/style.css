@@ -5045,6 +5045,267 @@ button:-moz-focusring,
     top: -12em !important;
   }
 }
+.bottom-negative-0 {
+  bottom: 0 !important;
+}
+
+.bottom-negative-1 {
+  bottom: -0.25em !important;
+}
+
+.bottom-negative-2 {
+  bottom: -0.5em !important;
+}
+
+.bottom-negative-3 {
+  bottom: -1em !important;
+}
+
+.bottom-negative-4 {
+  bottom: -1.5em !important;
+}
+
+.bottom-negative-5 {
+  bottom: -3em !important;
+}
+
+.bottom-negative-6 {
+  bottom: -6em !important;
+}
+
+.bottom-negative-7 {
+  bottom: -9em !important;
+}
+
+.bottom-negative-8 {
+  bottom: -12em !important;
+}
+
+@media (min-width: 500px) {
+  .bottom-negative-0-small-medium {
+    bottom: 0 !important;
+  }
+}
+@media (min-width: 500px) {
+  .bottom-negative-1-small-medium {
+    bottom: -0.25em !important;
+  }
+}
+@media (min-width: 500px) {
+  .bottom-negative-2-small-medium {
+    bottom: -0.5em !important;
+  }
+}
+@media (min-width: 500px) {
+  .bottom-negative-3-small-medium {
+    bottom: -1em !important;
+  }
+}
+@media (min-width: 500px) {
+  .bottom-negative-4-small-medium {
+    bottom: -1.5em !important;
+  }
+}
+@media (min-width: 500px) {
+  .bottom-negative-5-small-medium {
+    bottom: -3em !important;
+  }
+}
+@media (min-width: 500px) {
+  .bottom-negative-6-small-medium {
+    bottom: -6em !important;
+  }
+}
+@media (min-width: 500px) {
+  .bottom-negative-7-small-medium {
+    bottom: -9em !important;
+  }
+}
+@media (min-width: 500px) {
+  .bottom-negative-8-small-medium {
+    bottom: -12em !important;
+  }
+}
+@media (min-width: 700px) {
+  .bottom-negative-0-medium {
+    bottom: 0 !important;
+  }
+}
+@media (min-width: 700px) {
+  .bottom-negative-1-medium {
+    bottom: -0.25em !important;
+  }
+}
+@media (min-width: 700px) {
+  .bottom-negative-2-medium {
+    bottom: -0.5em !important;
+  }
+}
+@media (min-width: 700px) {
+  .bottom-negative-3-medium {
+    bottom: -1em !important;
+  }
+}
+@media (min-width: 700px) {
+  .bottom-negative-4-medium {
+    bottom: -1.5em !important;
+  }
+}
+@media (min-width: 700px) {
+  .bottom-negative-5-medium {
+    bottom: -3em !important;
+  }
+}
+@media (min-width: 700px) {
+  .bottom-negative-6-medium {
+    bottom: -6em !important;
+  }
+}
+@media (min-width: 700px) {
+  .bottom-negative-7-medium {
+    bottom: -9em !important;
+  }
+}
+@media (min-width: 700px) {
+  .bottom-negative-8-medium {
+    bottom: -12em !important;
+  }
+}
+@media (min-width: 950px) {
+  .bottom-negative-0-large {
+    bottom: 0 !important;
+  }
+}
+@media (min-width: 950px) {
+  .bottom-negative-1-large {
+    bottom: -0.25em !important;
+  }
+}
+@media (min-width: 950px) {
+  .bottom-negative-2-large {
+    bottom: -0.5em !important;
+  }
+}
+@media (min-width: 950px) {
+  .bottom-negative-3-large {
+    bottom: -1em !important;
+  }
+}
+@media (min-width: 950px) {
+  .bottom-negative-4-large {
+    bottom: -1.5em !important;
+  }
+}
+@media (min-width: 950px) {
+  .bottom-negative-5-large {
+    bottom: -3em !important;
+  }
+}
+@media (min-width: 950px) {
+  .bottom-negative-6-large {
+    bottom: -6em !important;
+  }
+}
+@media (min-width: 950px) {
+  .bottom-negative-7-large {
+    bottom: -9em !important;
+  }
+}
+@media (min-width: 950px) {
+  .bottom-negative-8-large {
+    bottom: -12em !important;
+  }
+}
+@media (min-width: 1221px) {
+  .bottom-negative-0-very-large {
+    bottom: 0 !important;
+  }
+}
+@media (min-width: 1221px) {
+  .bottom-negative-1-very-large {
+    bottom: -0.25em !important;
+  }
+}
+@media (min-width: 1221px) {
+  .bottom-negative-2-very-large {
+    bottom: -0.5em !important;
+  }
+}
+@media (min-width: 1221px) {
+  .bottom-negative-3-very-large {
+    bottom: -1em !important;
+  }
+}
+@media (min-width: 1221px) {
+  .bottom-negative-4-very-large {
+    bottom: -1.5em !important;
+  }
+}
+@media (min-width: 1221px) {
+  .bottom-negative-5-very-large {
+    bottom: -3em !important;
+  }
+}
+@media (min-width: 1221px) {
+  .bottom-negative-6-very-large {
+    bottom: -6em !important;
+  }
+}
+@media (min-width: 1221px) {
+  .bottom-negative-7-very-large {
+    bottom: -9em !important;
+  }
+}
+@media (min-width: 1221px) {
+  .bottom-negative-8-very-large {
+    bottom: -12em !important;
+  }
+}
+@media (min-width: 1443px) {
+  .bottom-negative-0-very-very-large {
+    bottom: 0 !important;
+  }
+}
+@media (min-width: 1443px) {
+  .bottom-negative-1-very-very-large {
+    bottom: -0.25em !important;
+  }
+}
+@media (min-width: 1443px) {
+  .bottom-negative-2-very-very-large {
+    bottom: -0.5em !important;
+  }
+}
+@media (min-width: 1443px) {
+  .bottom-negative-3-very-very-large {
+    bottom: -1em !important;
+  }
+}
+@media (min-width: 1443px) {
+  .bottom-negative-4-very-very-large {
+    bottom: -1.5em !important;
+  }
+}
+@media (min-width: 1443px) {
+  .bottom-negative-5-very-very-large {
+    bottom: -3em !important;
+  }
+}
+@media (min-width: 1443px) {
+  .bottom-negative-6-very-very-large {
+    bottom: -6em !important;
+  }
+}
+@media (min-width: 1443px) {
+  .bottom-negative-7-very-very-large {
+    bottom: -9em !important;
+  }
+}
+@media (min-width: 1443px) {
+  .bottom-negative-8-very-very-large {
+    bottom: -12em !important;
+  }
+}
 /*-----------------------------------------------------------------*\
   #SETTINGS-BREAKPOINTS
   Permet de paramétré les breakpoints. Le site serra adaptative
@@ -6795,26 +7056,12 @@ a img {
  * Arrondi les bords de tout les éléments qui peuvent avoir un bord arrondis.
  * @type Number
  */
-.icon {
-  width: 1em;
-  height: 1em;
-}
-
-.icon--link {
-  font-size: 1.1em;
-}
-
 .link-icon {
   display: inline-block;
   height: 1.8em;
   width: 1.8em;
   text-align: center;
   position: relative;
-  transition: outline 0.25s ease-out;
-}
-
-.link-icon--outline {
-  outline: solid 0.1em #ebfbff;
 }
 
 .link-icon > svg {
@@ -6823,20 +7070,28 @@ a img {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: fill 0.25s ease-out;
+  font-size: 1.1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.link-icon--outline {
+  outline: solid 0.1em #ebfbff;
+  transition: outline 0.25s ease-out;
+}
+
+.link-icon--neutral-light:hover > svg,
+.link-icon--neutral-light:focus > svg {
+  fill: #ff52bf;
 }
 
 .link-icon--neutral-light > svg {
   fill: #ebfbff;
 }
 
-.link-icon--neutral-light:hover,
-.link-icon--neutral-light:focus {
+.link-icon--outline:hover,
+.link-icon--outline:focus {
   outline: solid 0.1rem #ff52bf;
-}
-
-.link-icon--neutral-light:hover > svg,
-.link-icon--neutral-light:focus > svg {
-  fill: #ff52bf;
 }
 
 .navbar {
@@ -6847,9 +7102,14 @@ a img {
 }
 
 .nav-brand {
-  width: 8rem;
+  width: 7rem;
 }
 
+@media (min-width: 950px) {
+  .nav-brand {
+    width: 9rem;
+  }
+}
 /*------------------------------------*\
   #SETTINGS-GLOBAL
 \*------------------------------------*/
@@ -7316,6 +7576,7 @@ a img {
   .header {
     padding-right: 2em;
     padding-left: 2em;
+    background: #ebfbff url("../images/bg-hero-desktop.svg");
   }
 }
 @media (min-width: 1402px) {
@@ -7426,7 +7687,6 @@ a img {
 .footer {
   background: #00252e;
   color: #ebfbff;
-  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

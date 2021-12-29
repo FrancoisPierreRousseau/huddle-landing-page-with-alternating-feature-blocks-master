@@ -3,51 +3,44 @@
 @use "../settings/global";
 
 
-.icon{
-  width: 1em;
-  height: 1em;
-}
-
-.icon--link{
-  font-size: 1.1em;
-}
-
-// Lien avec des icons données
+// BLOCK
 .link-icon {
   display: inline-block;
   height: 1.8em;
   width: 1.8em;
   text-align: center;
   position: relative;
-  transition: outline 0.25s ease-out
 }
 
-.link-icon--outline{
-  outline: solid .1em hsl(193, 100%, 96%);
-}
-
-.link-icon > svg{
+.link-icon > svg {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: fill 0.25s ease-out;
+  font-size: 1.1rem;
+  width: 1rem;
+  height: 1rem;
 }
 
-.link-icon--neutral-light > svg{
+.link-icon--outline {
+  outline: solid .1em hsl(193, 100%, 96%);
+  transition: outline 0.25s ease-out;
+}
+
+// ACTIVE STATES DES LINKS ICONS
+.link-icon--neutral-light:hover > svg,
+.link-icon--neutral-light:focus > svg {
+  fill: map.get(global.$palette, "primary", "light", color);
+}
+
+.link-icon--neutral-light > svg {
   fill: hsl(193, 100%, 96%);
 }
 
 
-
-.link-icon--neutral-light:hover,
-.link-icon--neutral-light:focus{
+.link-icon--outline:hover,
+.link-icon--outline:focus {
   outline: solid .1rem map.get(global.$palette, "primary", "light", color);
 }
-
-.link-icon--neutral-light:hover  > svg,
-.link-icon--neutral-light:focus >  svg{
-  fill: map.get(global.$palette, "primary", "light", color);
-}
-
 

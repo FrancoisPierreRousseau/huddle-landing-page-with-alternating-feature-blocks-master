@@ -1,11 +1,17 @@
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   padding: .75rem;
   align-items: center;
 }
 
-.nav-brand{
-  width: 8rem;
+.nav-brand {
+  width: 7rem;
+}
+
+@media (min-width: 950px) {
+  .nav-brand {
+    width: 9rem;
+  }
 }
 
